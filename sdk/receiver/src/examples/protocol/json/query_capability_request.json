@@ -1,0 +1,12 @@
+{
+  "header" : {
+    "controllerType" : "none",
+    "controllerId" : "none"
+  },
+  "body" : {
+    "paramList" : [ ],
+    "hash" : "1720815825",
+    "actionType" : "request",
+    "actionName" : "query_capability"
+  }
+}

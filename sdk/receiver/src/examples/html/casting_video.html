@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Begin of no-cache setting -->
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- End of no-cache setting -->
+
+    <title>Casting Video </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/joycast.receiver.sdk.js"></script>
+</head>
+
+<body onload="onLoad()" onunload="onUnload()">
+
+    <!-- Begin of OrangeCast User Application View -->
+    <div id="sample">JOYCAST</div>
+    <div id="custom_message" class="rotateIn"></div>
+    <div id="ready-container" class="ready-container">
+        <div style="position: fixed;bottom: 0px; right: 0px;left: 0px;z-index: 1030;background-color: black">joyCast Reference
+        </div>
+    </div>
+
+    <div id="player-container" class="player-container">
+        <video id="media" class="media"></video>
+        <div id="state" class="state"><img src="../img/pause.png" class="img-pause"> Pause</div>
+        <div id="buffering" class="buffering vertical-aligned vertical-align-children">
+            <div class="spinner vertical-aligned">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <div id="volume" class="volume">
+            <div id="volume-track" class="volume-track">
+                <div id="volume-bar" class="volume-bar"></div>
+            </div>
+        </div>
+        <div id="osd" class="osd">
+            <div class="logo">
+                <img id="logo" />
+            </div>
+            <div class="metadata">
+                <div id="title" class="title"></div>
+                <div id="subtitle" class="subtitle"></div>
+
+                <div class="progress">
+                    <div id="time-current" class="progress-time">00:00:00</div>
+                    <div id="progress-track" class="progress-track">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <div id="time-total" class="progress-time">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="image-container" class="image-container">
+        <img id="img" class="img" />
+    </div>
+
+    <div id="error-container" class="error-container">
+        <h2 id="message-title"></h2>
+        <p id="message-description"></p>
+    </div>
+    <!-- End of OrangeCast User Application View -->
+    <!-- Begin of OrangeCast User Application Controller -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/view_controller.js"></script>
+    <!-- End of OrangeCast User Application Controller -->
+
+    <script>
+        var castManager;
+        var castSession;
+        var av_controller, photo_controller;
+        var mediaContainer, homeContainer;
+
+        function onUnload() {
+            castManager = null;
+            av_controller = null;
+        }
+
+        function onLoad() {
+            /* Begin of Orange DOM */
+            $title = $('#title'),
+            $subtitle = $('#subtitle'),
+            $logo = $('#logo'),
+            $progressBar = $('#progress-bar'),
+            $volumeBar = $('#volume-bar'),
+            $totalTime = $('#time-total'),
+            $currentTime = $('#time-current');
+            currentContainer = $('#ready-container');
+            currentContainer.show();
+            /* End of Orange DOM */
+
+            castManager = joycast.receiver.CastManager.getInstance();
+            castSession = castManager.createSession();
+            castSession.onSessionConnected = function (url, cast_session) {
+                console.log("onSessionConnected");
+                var videoElement = document.getElementById('media');
+                var imageElement = document.getElementById('img');
+                photo_controller = cast_session.getPhotoController();
+                photo_controller.setImageElement(imageElement);
+                photo_controller.onLoad = function(url) {
+                    displayImage(url);
+                }
+                photo_controller.onUnload = function() {
+                    displayHome();
+                }
+
+                av_controller = cast_session.getAvController();
+                av_controller.setVideoElement(videoElement);
+                av_controller.setHomepage(window.location.href);
+
+                av_controller.onLoad = function (duration) {
+                    console.log("Duration is " + duration);
+                    displayPlayer(true);
+                }
+
+                av_controller.onPlay = function (video_info) {
+                    console.log("onPlay");
+                    $title.text(video_info.title);
+                    displayOsd(true);
+                    displayPause(false);
+                    displayBuffering(false);
+                }
+
+                av_controller.onPlaying = function () {
+                    console.log("onPlaying");
+                    displayBuffering(false);
+                }
+
+                av_controller.onPlayRateChange = function(playrate) {
+                    console.log("onPlayRateChange [PlayRate: " + playrate + "]");
+                }
+
+                av_controller.onWaiting = function () {
+                    console.log("onWaiting");
+                    displayBuffering(true);
+                }
+
+                av_controller.onPause = function () {
+                    console.log("onPause");
+                    displayOsd(true);
+                    displayPause(true);
+                }
+
+                av_controller.onStop = function () {
+                    console.log("onStop");
+                    displayHome();
+                }
+
+                av_controller.onSeeking = function() {
+                    console.log("onSeeking");
+                    displayOsd(true);
+                }
+
+                av_controller.onSeeked = function() {
+                    console.log("onSeeked");
+                    displayOsd(true);
+                }
+
+                av_controller.onVolumeChange = function (volume) {
+                    console.log("onVolumeChange");
+                    displayVolume(true);
+                    console.log("width", (volume / 1) * 100, "volumeBar", $volumeBar, $volumeBar.css('width'));
+                    $volumeBar.css('width', volume / 1 * 100 + '%');
+                }
+
+                av_controller.onMute = function () {
+                    console.log("onMute");
+                    displayVolume(true);
+                    $volumeBar.css('width', 0 / 1 * 100 + '%');
+                }
+
+                av_controller.onUnmute = function (volume) {
+                    console.log("onUnmute");
+                    displayVolume(true);
+                    $volumeBar.css('width', volume / 1 * 100 + '%');
+                }
+
+                av_controller.onEnded = function () {
+                    console.log("onEnded");
+                    displayHome();
+                }
+
+                av_controller.onError = function () {
+                    console.log("onError");
+                    displayBuffering(false);
+                    $('#osd').hide();
+                    displayError(i18n.t('error.title'), i18n.t('error.network-error'));
+                }
+
+                av_controller.onPositionChange = function (duration, position) {
+                    console.log("onPositionChange - " + position);
+                    var current = toTimer(position),
+                    total = toTimer(duration),
+                    percentage = Math.floor((100 / duration) * position);
+
+                    $currentTime.text(current);
+                    if (isLive)
+                        $totalTime.text('');
+                    else
+                        $totalTime.text(total);
+                    $progressBar.css('width', percentage + '%');
+                }
+
+                av_controller.onCustomMessage = function (name, message) {
+                    console.log("onCustomMessage [" + name + ", " + message + "]");
+                    displayCustomMessage(name, message);
+                    /* Example for echo message */
+                    av_controller.sendCustomMessage(name, message);
+                }
+
+                av_controller.onRequestMoveScreen = function (x, y, w, h) {
+                    console.log("onMoveScreen [" + x + ", " + y + ", " + w + ", " + h + "]");
+                    movePlayer(x, y, w, h);
+                }
+
+                av_controller.onRequestFullScreen = function () {
+                    console.log("onFullScreen");
+                    fullscreenPlayer();
+                }
+            };
+            castSession.onSessionDisconnected = function (url, cast_session) {
+                console.log("onSessionDisconnected");
+            };
+            castSession.connect("ws://localhost:7755/");
+            // castSession.connect("ws://10.0.12.157:7755/receiver");
+        }
+    </script>
+</body>
+
+</html>

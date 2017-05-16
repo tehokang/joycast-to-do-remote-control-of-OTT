@@ -1,0 +1,28 @@
+{
+  "header" : {
+    "controllerType" : "none",
+    "controllerId" : "none"
+  },
+  "body" : {
+    "paramList" : [ ],
+    "hash" : "1720815825",
+    "actionType" : "response",
+    "actionName" : "query_capability"
+  },
+  "result": {
+    "code" : "200",
+    "description" : "return of query_capability",
+    "paramList" :  [
+        {
+            "type": "string",
+            "name": "av_controller",
+            "value": "1234567891"
+        },
+        {
+            "type": "string",
+            "name": "photo_controller",
+            "value": "987654321"
+        }
+    ]
+  }
+}

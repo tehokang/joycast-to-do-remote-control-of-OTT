@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noImplicitAny" : false,
+    "noImplicitUseStrict": false,
+    "disableSizeLimit": true,
+    "listFiles": true,
+    "outDir": "dist/"
+  },
+  "compileOnSave": false,
+  "include": [
+  	"src/receiver/**/*"
+  ],
+  "files": [
+    "src/receiver/joycast.receiver.sdk.ts",
+
+  	"src/testcases/connect_websocket_relay_server.ts",
+    "src/testcases/casting_video.ts",
+
+  	"src/receiver/cast/cast_manager.ts",
+  	"src/receiver/cast/cast_session.ts",
+    "src/receiver/cast/cast_session_impl.ts",
+
+  	"src/receiver/codec/factory.ts",
+    "src/receiver/codec/param.ts",
+    "src/receiver/codec/request.ts",
+    "src/receiver/codec/response.ts",
+
+  	"src/receiver/controller/controller.ts",
+  	"src/receiver/controller/av_controller.ts",
+    "src/receiver/controller/av_controller_impl.ts",
+  	"src/receiver/controller/photo_controller.ts",
+    "src/receiver/controller/photo_controller_impl.ts",
+
+    "src/receiver/utils/logger.ts",
+    "src/receiver/utils/websocket_client.ts"
+  ],
+  "exclude": [
+    "src/examples/**/*",
+  	"src/declarations/**/*",
+  	"node_modules",
+    "/usr/local/lib/node_modules"
+  ]
+}

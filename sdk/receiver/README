@@ -1,0 +1,42 @@
+About
+=====
+
+HuCast SDK is consisting of receiver and sender. Basically receiver will be able to
+deploy on OTT stick, STB, and others which are able to display media from world wide web.
+Sender on mobile can control the receivers by using websocket and discover the receivers by
+using DIAL protocols.
+
+
+
+How to build
+============
+Developer to release SDK will need packages of prerequisite like
+( you may need right of root account )
+ 1) npm
+   - sudo apt-get install -y npm
+ 2) node(nodejs) : 7.6.x
+   - Installation
+    # curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+    # sudo apt-get install -g nodejs
+    # sudo apt-get install -g build-essential (if you only need)
+ 3) typescript : 2.2.1
+   - Installation : npm install -g typescript
+ 4) browserify : 14.1.x
+   - Installation : npm install -g browserify
+ 5) babel : 6.24.x
+   - Installation : npm install -g babel-cli
+ 6) typedoc : 0.5.9 (must this version over > 0.5.9)
+   - Installation : npm install --save-dev typedoc
+   - Version check : ./node_modeuls/.bin/typedoc --v
+ Final) npm install (or npm install --save-dev)
+
+Type make command to build
+> make
+
+Type make command with option to release library minified and documents
+> make release
+
+How to Run
+==========
+Open dist/example/html/casting_video.html including the test page by browser
+

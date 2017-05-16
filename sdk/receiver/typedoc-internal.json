@@ -1,0 +1,20 @@
+{
+  "name": "JoyCast",
+  "mode": "file",
+  "out": "dist/doc/internal/",
+  "theme": "minimal",
+  "ignoreCompilerErrors": "true",
+  "experimentalDecorators": "true",
+  "emitDecoratorMetadata": "true",
+  "target": "ES5",
+  "moduleResolution": "node",
+  "preserveConstEnums": "true",
+  "stripInternal": "true",
+  "suppressExcessPropertyErrors": "true",
+  "suppressImplicitAnyIndexErrors": "true",
+  "module": "commonjs",
+  "excludePrivate": "true",
+  "excludeExternals" : "true",
+  "excludeNotExported" : "true",
+  "exclude": ""
+}

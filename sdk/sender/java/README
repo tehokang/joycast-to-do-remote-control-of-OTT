@@ -1,0 +1,66 @@
+Prerequisite you have to install
+===============================
+1.ANT
+Please check ant version you installed, you should better install the version higher than 1.10.
+> wget http://mirror.navercorp.com/apache//ant/binaries/apache-ant-1.8.4-bin.tar.gz
+> tar xvf apache-ant-1.10.1-bin.tar.gz
+> sudo cp -fr apache-ant-1.10.1 /usr/local/
+> export PATH=$PATH:/usr/local/apache-ant-1.10.1/bin
+Secondly added the path to use binary 'ant', it's done to prepare building.
+
+2.JAVA
+Please install jdk-1.8 and update JAVA_HOME and PATH to find commands like java, javac
+Download : http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+How to Build on console
+=======================
+{project root}
+    ├── README
+    ├── build.xml
+    ├── libs
+    ├── src
+    └── version.properties
+
+> ant build
+If you do "ant build" in root then you can see the binary directory named as "bin"
+
+How to Release as library
+=========================
+> ant release-sdk
+> ant release-obfuscate-sdk
+To obfuscate sdk you need proguard 4.11 (less than 5.x) since sdk has to be built on jdk 1.7
+
+How to Release  unittest application to verify
+==============================================
+> ant release-unittest-application
+Then you can see "release" directory having a executable jar named as joycast.sender.sdk-x.x.x-uniitest.jar
+
+How to Run UnitTestApplication on console
+=========================================
+> java -jar joycast.sender.sdk-x.x.x-uniitest.jar 192.168.0.3 4443 true
+Then you can see below menus
+
+     [java] HCS_SDK[I] =================================
+     [java] HCS_SDK[I]      UnitTest Application
+     [java] HCS_SDK[I] =================================
+     [java] HCS_SDK[I] 1. discover
+     [java] HCS_SDK[I] 2. launch
+     [java] HCS_SDK[I] 3. connect relay server
+     [java] HCS_SDK[I] 4. play with new source 1
+     [java] HCS_SDK[I] 5. play with new source 2
+     [java] HCS_SDK[I] 6. play with new source 3
+     [java] HCS_SDK[I] 7. play
+     [java] HCS_SDK[I] 8. play fastforward
+     [java] HCS_SDK[I] 9. play normal
+     [java] HCS_SDK[I] 10. play rewind
+     [java] HCS_SDK[I] 11. stop
+     [java] HCS_SDK[I] 12. pause
+     [java] HCS_SDK[I] 13. seek
+     [java] HCS_SDK[I] 14. volume up
+     [java] HCS_SDK[I] 15. volume down
+     [java] HCS_SDK[I] 16. mute
+     [java] HCS_SDK[I] 17. unmute
+     [java] HCS_SDK[I] 18. custom message
+     [java] HCS_SDK[I] 19. exit
+     [java] HCS_SDK[I] Choose one of above (type ? to help) :
+Finally you can choose number of scenario you want to do.

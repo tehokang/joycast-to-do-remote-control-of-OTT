@@ -1,0 +1,411 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    height: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#sample {
+    font-size: 9vw;
+    opacity: 0.3;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: red;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#custom_message {
+    font-size: 4vw;
+    opacity: 1.0;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: white;
+    -webkit-text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    z-index: 100;
+}
+
+.rotateIn {
+     -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateIn {
+    0% {
+        transform-origin: center center;
+        transform: rotate(360deg);
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotate(0);
+    }
+}
+
+.ready-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #fff url(../img/joycast_background.gif) no-repeat center center;
+}
+
+.player-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+}
+
+.image-container {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.image-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.error-container {
+    display: none;
+    background: #000;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.media {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: fill;
+}
+
+.state {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    display: none;
+}
+
+.img-pause {
+    background: transparent;
+}
+
+.osd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 180px;
+    display: none;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.metadata {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+    padding: 32px;
+}
+
+.channel,
+.title,
+.source {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 42px;
+    color: #f90;
+}
+
+.progress {
+}
+
+.progress-time {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.progress-track {
+    width: 400px;
+    height: 4px;
+    margin: 0 10px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.progress-bar {
+    background: #f90;
+    height: 100%;
+    width: 0%;
+}
+
+.buffering {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(-10%, -90%);
+    transform: translate(-10%, -90%);
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5vw;
+    border-radius: 1.9vw;
+    text-align: center;
+    display: none;
+}
+
+.buffering .spinner {
+    margin-top: .7vw;
+    width: 99%
+}
+
+.buffering .spinner > div {
+    width: .3vw
+}
+
+.buffering-shown {
+    opacity: 1;
+}
+
+.volume {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.volume-shown .volume {
+    opacity: 1;
+}
+
+.volume-track {
+    width: 200px;
+    height: 4px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.volume-bar {
+    background: #f90;
+    height: 100%;
+    width: 0%;
+}
+
+.img {
+    max-height: 100%;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.error-message {
+    display: none;
+    width: 100%;
+    background-color: #F1F1F1;
+    color: #0d0d0d;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.audio_bg{
+    background: transparent url(../img/background.png) no-repeat center center;
+}
+
+.error-message .title-error {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.error-message .error-icon {
+    margin-right: 1em;
+}
+
+.error-message .message {
+    text-align: center;
+    width: 70%;
+}
+
+.error-message .message p {
+    width: 80%;
+    font-size: 2vw;
+    margin-left: 1em;
+}
+
+.error-message .message .main-error-message {
+    font-size: 1.7vw;
+    margin-left: 0;
+}
+
+.error-message .message .secondary-error-message {
+    font-weight: bold;
+}
+
+.spinner {
+    display: inline-block;
+    font-size: 0.7vw;
+    height: 3em;
+    width: 3.9vw;
+}
+
+.spinner > div {
+    -webkit-animation: 1.2s ease-in-out infinite stretchdelay;
+
+    animation-name: stretchdelay;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    background-color: #f1f1f1;
+    display: inline-block;
+    height: 100%;
+    width: 0.4vw;
+}
+
+.spinner > div {
+    background-color: clrWhite;
+    height: 100%;
+    width: 0.4vw;
+    display: inline-block;
+
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner.orange > div {
+    background-color: #ff6600;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}

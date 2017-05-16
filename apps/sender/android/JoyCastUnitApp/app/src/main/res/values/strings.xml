@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">JoyCast Unit Test</string>
+    <string name="loading_subtitle">- Unit Test - </string>
+    <string name="dial">DIAL</string>
+    <string name="discover">Discover</string>
+    <string name="launch_joycast">Launch JoyCast</string>
+    <string name="launch_youtube">Launch YouTube</string>
+    <string name="stop_joycast">Stop JoyCast</string>
+    <string name="stop_youtube">Stop YouTube</string>
+    <string name="session">Session</string>
+    <string name="connect">Connect\nRelay</string>
+    <string name="connect_custom">Connect\nCustom</string>
+
+    <string name="cast">Cast</string>
+    <string name="play_source_1">Play\nSource1</string>
+    <string name="play_source_2">Play\nSource2</string>
+    <string name="play_source_3">Play\nSource3</string>
+    <string name="play_source_custom">Play\nCustom</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="play_faster">Play\nFaster</string>
+    <string name="play_slower">Play\nSlower</string>
+    <string name="play_normal">Play\nNormal</string>
+    <string name="custom_message">Custom\nMessage</string>
+    <string name="seek_minus_5">Seek -5</string>
+    <string name="seek_plus_5">Seek +5</string>
+    <string name="volume_up">Volume\nUp</string>
+    <string name="volume_down">Volume\nDown</string>
+    <string name="display_320_240">320x240</string>
+    <string name="display_720_480">720x480</string>
+    <string name="display_fullscreen">FullScreen</string>
+    <string name="rcu">RCU</string>
+    <string name="photo">Photo</string>
+    <string name="rcu_rewind">«</string>
+    <string name="rcu_play">▶</string>
+    <string name="rcu_pause">||</string>
+    <string name="rcu_fastforward">»</string>
+    <string name="rcu_stop">◼︎</string>
+
+    <string name="discover_dialog_title">Detected DialServers</string>
+    <string name="photoselect_dialog_title">Photo List</string>
+</resources>
