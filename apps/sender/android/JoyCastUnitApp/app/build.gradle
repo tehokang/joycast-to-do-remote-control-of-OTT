@@ -4,9 +4,9 @@ import java.util.regex.Pattern
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "humaxdigital.joycast.unitapp"
+        applicationId "sender.joycast.unitapp"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
@@ -25,7 +25,7 @@ android {
             variant.outputs.each { output ->
                 def formattedDate = new Date().format('yyyyMMdd_HHmmss')
                 def apkName = "JoyCastUnitTest" + "-" + variant.versionName + "-" + formattedDate + ".apk"
-                output.outputFile = new File(output.outputFile.parent, apkName)
+//                output.outputFile = new File(output.outputFile.parent, apkName)
             }
         }
     }
@@ -39,17 +39,17 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     /* Library for DIAL Client of JoyCast SDK using */
-    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    testCompile 'junit:junit:4.12'
-    compile files('libs/joycast.sender.sdk-1.0.jar')
+    api 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    api 'com.android.support:appcompat-v7:25.3.1'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    testImplementation 'junit:junit:4.12'
+    api files('libs/joycast.sender.sdk-1.0.jar')
 }
 
 task('increaseVersionCode') << {

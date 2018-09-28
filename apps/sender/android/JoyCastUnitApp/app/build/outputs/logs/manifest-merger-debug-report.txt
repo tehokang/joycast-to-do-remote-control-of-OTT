@@ -1,0 +1,157 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/d0fd19a7df53e0099504559b08c5fd07/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:5:5-34
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:9:5-78
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:10:22-73
+application
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:12:5-26:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/d0fd19a7df53e0099504559b08c5fd07/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/d0fd19a7df53e0099504559b08c5fd07/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:18:9-59
+activity#sender.joycast.unitapp.sender.joycast.unitapp.MainActivity
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:19:9-25:20
+	android:screenOrientation
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:20:13-49
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:19:19-92
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:21:13-24:29
+action#android.intent.action.MAIN
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/d0fd19a7df53e0099504559b08c5fd07/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/d0fd19a7df53e0099504559b08c5fd07/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/429dffaf0085fc4dd301cf91ac48ea87/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/4f8bc576ee64c29d3edc67caf9ff4f5d/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/30bea578eedd94708c2f1729e32a0c84/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/c8444038be6340f5a9be5d60954a29f6/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/38ba5c1a8f777ebe7e906153dabdab50/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/5a9c934fa70293821f399f92ab322991/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6da62387670c820367e01f8f6142357b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/59d9aec36996ae270933794d50cd0480/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/tehokang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eab80d1bc0f9bf5868a6c3729f71ef8c/AndroidManifest.xml:26:9-47

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="humaxdigital.joycast.unitapp.MainActivity"
+    tools:context="sender.joycast.unitapp.sender.joycast.unitapp.MainActivity"
     android:orientation="vertical">
 
     <LinearLayout

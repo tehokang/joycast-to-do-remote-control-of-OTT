@@ -67,7 +67,7 @@
             basedir="${bin.dir}" 
             includes="**">
             <manifest>
-                <attribute name="Main-Class" value="humaxdigital.joycast.zexample.UnitTestApplication"/>
+                <attribute name="Main-Class" value="sender.joycast.zexample.UnitTestApplication"/>
             </manifest>
             <zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
         </jar>
@@ -77,7 +77,7 @@
         <jar jarfile="${release.dir}/${ant.project.name}-${version}.jar" 
             basedir="${bin.dir}" 
             includes="**/*.class" 
-            excludes="humaxdigital/joycast/zexample/*.class">
+            excludes="sender/joycast/zexample/*.class">
             <zipgroupfileset dir="${lib.dir}" 
                 includes="**/*.jar"
                 excludes="**/http*.jar,**/commons*.jar,**/proguard.jar,**/META-INF/*"/>
@@ -90,7 +90,7 @@
                  classpath="${lib.dir}/proguard-4.11.jar" />
         <echo> ${java.home} </echo>
         <proguard overloadaggressively="on"
-                 defaultpackage="humaxdigital.joycast"
+                 defaultpackage="sender.joycast"
                  allowaccessmodification="on"
                  printseeds="on"
                  obfuscate="yes">
@@ -110,10 +110,10 @@
             -outjars ${release.dir}/${ant.project.name}-${version}.min.jar
             -dontnote
             -dontwarn
-            -keep class humaxdigital.joycast.** { 
+            -keep class sender.joycast.** { 
                 public *;
             }
-            -keep interface humaxdigital.joycast.** {
+            -keep interface sender.joycast.** {
                 public *;
             }
             -keepattributes InnerClasses
@@ -145,15 +145,15 @@
                 docencoding="utf-8"
                 bottom="Copyright Humax. All rights reserved.">
             <fileset dir="${src.dir}" defaultexcludes="yes">
-                <include name="humaxdigital/joycast/DiscoveryManager.java"/>
-                <include name="humaxdigital/joycast/SessionManager.java"/>
-                <include name="humaxdigital/joycast/dial/DialServer.java"/>
-                <include name="humaxdigital/joycast/session/CastSession.java"/>
-                <include name="humaxdigital/joycast/session/Session.java"/>
-                <include name="humaxdigital/joycast/controller/AVController.java"/>
-                <include name="humaxdigital/joycast/controller/PhotoController.java"/>
-                <include name="humaxdigital/joycast/util/CastLogger.java"/>
-                <include name="humaxdigital/joycast/constant/Configuration.java"/>
+                <include name="sender/joycast/DiscoveryManager.java"/>
+                <include name="sender/joycast/SessionManager.java"/>
+                <include name="sender/joycast/dial/DialServer.java"/>
+                <include name="sender/joycast/session/CastSession.java"/>
+                <include name="sender/joycast/session/Session.java"/>
+                <include name="sender/joycast/controller/AVController.java"/>
+                <include name="sender/joycast/controller/PhotoController.java"/>
+                <include name="sender/joycast/util/CastLogger.java"/>
+                <include name="sender/joycast/constant/Configuration.java"/>
             </fileset>
             <classpath>
                 <pathelement location="${bin.dir}"/>

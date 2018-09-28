@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:/Users/tehokang/Documents/Workspace/joycast-to-do-remote-control-of-OTT/apps/sender/android/JoyCastUnitApp/app/libs/joycast.sender.sdk-1.0.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/joycast.sender.sdk-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
